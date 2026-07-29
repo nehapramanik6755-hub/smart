@@ -29,4 +29,8 @@ public class AuthController {
                 loginUser.getPassword()
         );
     }
+     @GetMapping("/")
+    public String home() {
+        return "Travel Guide Backend is Running";
+    }
 }
